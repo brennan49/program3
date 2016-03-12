@@ -107,9 +107,10 @@ int
 growproc(int n)
 {
   uint sz;
-  
   sz = proc->sz;
   if(n > 0){
+    if((sz+n) > proc->lowestAddr)
+      return -1;
     if((sz = allocuvm(proc->pgdir, sz, sz + n)) == 0)
       return -1;
   } else if(n < 0){
@@ -146,6 +147,10 @@ fork(void)
   *np->tf = *proc->tf;
   np->pageAccesses = proc->pageAccesses;
   np->lowestAddr = proc->lowestAddr;
+  int j;
+  for(j = 0; j < 4; j++){
+    np->pageAddr[j] = proc->pageAddr[j];
+  }
   // Clear %eax so that fork returns 0 in the child.
   np->tf->eax = 0;
 

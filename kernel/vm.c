@@ -322,14 +322,14 @@ copyuvm(pde_t *pgdir, uint sz)
     if(mappages(d, (void*)i, PGSIZE, PADDR(mem), PTE_W|PTE_U) < 0)
       goto bad;
   }
-  return d;
   for(j = 0; j < 4; j++){
-    if(shmemCount[i] == 0)
+    if(shmemCount[j] == 0)
       continue;
-    if(mappages(d, proc->pageAddr[i], PGSIZE, (uint)shmem_addr[j], PTE_W|PTE_U) < 0)
+    if(mappages(d, (void*) proc->pageAddr[j], PGSIZE, (uint)shmem_addr[j], PTE_W|PTE_U) < 0)
       goto bad;
     shmemCount[j]++;
   }
+  return d;
 bad:
   freevm(d);
   return 0;
