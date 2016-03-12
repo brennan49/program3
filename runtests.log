@@ -13,23 +13,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 424 blocks have been allocated
 balloc: write bitmap block at sector 28
 
@@ -60,23 +60,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -86,23 +86,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -145,23 +145,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -171,23 +171,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -230,23 +230,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -256,23 +256,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -314,23 +314,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -340,23 +340,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -370,7 +370,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-
+$ 
 
 test shmem_access_invalid_input PASSED (10 of 10)
  (shmem_access invalid input test)
@@ -398,23 +398,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -424,23 +424,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -453,12 +453,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
+TEST PASSED
 $ 
 
-test shmem_access_return_value FAILED (0 of 10)
+test shmem_access_return_value PASSED (10 of 10)
  (shmem_access return value needs to be one of 4 pages of virtual address space; first access needs to return last virtual page, second access needs to return second to last virtual page, etc.)
- tester failed
 
 starting shmem_access_double_call
 
@@ -483,23 +482,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -509,23 +508,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -538,12 +537,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
+TEST PASSED
+$ 
 
-
-test shmem_access_double_call FAILED (0 of 10)
+test shmem_access_double_call PASSED (10 of 10)
  (shmem_access called twice with same page number, making sure same physical page is not mapped into 2 different places in virtual address space)
- tester failed
 
 starting shmem_access_double_call_fork
 
@@ -568,23 +566,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -594,23 +592,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -653,23 +651,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -679,23 +677,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -708,12 +706,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
-$ 
+TEST PASSED
 
-test shmem_access_read_write FAILED (0 of 10)
+
+test shmem_access_read_write PASSED (10 of 10)
  (making sure shared pages are readable and writable)
- tester failed
 
 starting shmem_access_communication
 
@@ -738,23 +735,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -764,23 +761,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -793,12 +790,12 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
+pid 4 tester: trap 14 err 4 on cpu 0 eip 0x10ae addr 0x9f000--kill proc
+TEST PASSED
 $ 
 
-test shmem_access_communication FAILED (0 of 10)
+test shmem_access_communication PASSED (10 of 10)
  (one process writing something and the other process reading it.)
- tester failed
 
 starting shmem_access_full_address_space
 
@@ -823,23 +820,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -849,23 +846,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -907,23 +904,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -933,23 +930,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -962,12 +959,12 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
-$ 
+cpu1: panic: remap
+ 107369 107806 103ddd 105ae9 104cc9 105eb5 105ca9 0 0 0
 
 test shmem_access_full_address_space2 FAILED (0 of 10)
  (sbrk should not allocate and go past a shared memory.)
- tester failed
+ xv6 kernel panic
 
 starting shmem_access_persistent
 
@@ -992,23 +989,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1018,23 +1015,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 425 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1047,7 +1044,6 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
 TEST FAILED
 
 
@@ -1084,23 +1080,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester user/bin/echo
@@ -1110,23 +1106,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1139,12 +1135,12 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
-$ 
+pid 4 echo: trap 14 err 6 on cpu 1 eip 0x1053 addr 0x9f000--kill proc
+TEST PASSED
 
-test shmem_access_exec FAILED (0 of 10)
+
+test shmem_access_exec PASSED (10 of 10)
  (a new exec-ed program should not have access to shared pages when it begins.)
- tester failed
 
 starting shmem_access_exec2
 
@@ -1175,23 +1171,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester user/bin/echo
@@ -1201,23 +1197,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1230,12 +1226,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
-$ 
+TEST PASSED
 
-test shmem_access_exec2 FAILED (0 of 10)
+
+test shmem_access_exec2 PASSED (10 of 10)
  (a new exec-ed program should reallocate virtual pages if shmem_access is called.)
- tester failed
 
 starting shmem_access_syscall_args
 
@@ -1260,23 +1255,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 427 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1286,23 +1281,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 427 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1315,6 +1310,7 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
+open system call failed to take a string from within a shared page
 TEST FAILED
 
 
@@ -1345,23 +1341,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1371,23 +1367,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1400,12 +1396,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
+TEST PASSED
 $ 
 
-test shmem_count_invalid_input FAILED (0 of 10)
+test shmem_count_invalid_input PASSED (10 of 10)
  (shmem_count invalid input test)
- tester failed
 
 starting shmem_count_zero
 
@@ -1430,23 +1425,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1456,23 +1451,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1486,7 +1481,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-$ 
+
 
 test shmem_count_zero PASSED (10 of 10)
  (shmem_count should return 0 if no one is referencing the page.)
@@ -1514,23 +1509,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1540,23 +1535,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1570,7 +1565,6 @@ init: starting sh
 $ tester
 tester
 TEST FAILED
-TEST PASSED
 
 
 test shmem_count_zero2 FAILED (0 of 10)
@@ -1600,23 +1594,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1626,23 +1620,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1655,12 +1649,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
+TEST PASSED
 
 
-test shmem_count_one FAILED (0 of 10)
+test shmem_count_one PASSED (10 of 10)
  (shmem_count should return 1 after 1 access.)
- tester failed
 
 starting shmem_count_one2
 
@@ -1685,23 +1678,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1711,23 +1704,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1740,12 +1733,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
+TEST PASSED
+$ 
 
-
-test shmem_count_one2 FAILED (0 of 10)
+test shmem_count_one2 PASSED (10 of 10)
  (shmem_count should return 1 after 2 accesses to the same page.)
- tester failed
 
 starting shmem_count_fork
 
@@ -1770,23 +1762,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1796,23 +1788,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1826,7 +1818,7 @@ init: starting sh
 $ tester
 tester
 TEST FAILED
-$ 
+
 
 test shmem_count_fork FAILED (0 of 10)
  (shmem_count should return 2 after fork if the parent process has accessed a shared page.)
@@ -1861,23 +1853,23 @@ cp user/bin/tester fs/tester
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester user/bin/echo
@@ -1887,23 +1879,23 @@ No rule to make target user/null.d
 No rule to make target fs/null
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
 init
-grep
-ln
-rm
 mkdir
-stressfs
 echo
 sh
-forktest
-usertests
-tester
-wc
-README
 zombie
+README
+grep
+cat
+forktest
+stressfs
+ln
+rm
 kill
+tester
 ls
+usertests
+wc
 balloc: first 426 blocks have been allocated
 balloc: write bitmap block at sector 28
 Ctrl+a h for help
@@ -1917,7 +1909,7 @@ init: starting sh
 $ tester
 tester
 TEST FAILED
-$ 
+
 
 test shmem_count_exec FAILED (0 of 10)
  (Exec should decrement count for shared pages. Parent accesses a shared page, then it forks. Child performs exec to start a new program. In the new program, the count for the shared page should be 1.)
@@ -1940,52 +1932,45 @@ test bounds PASSED (10 of 10)
 test shmem_access_invalid_input PASSED (10 of 10)
  (shmem_access invalid input test)
 
-test shmem_access_return_value FAILED (0 of 10)
+test shmem_access_return_value PASSED (10 of 10)
  (shmem_access return value needs to be one of 4 pages of virtual address space; first access needs to return last virtual page, second access needs to return second to last virtual page, etc.)
- tester failed
 
-test shmem_access_double_call FAILED (0 of 10)
+test shmem_access_double_call PASSED (10 of 10)
  (shmem_access called twice with same page number, making sure same physical page is not mapped into 2 different places in virtual address space)
- tester failed
 
 test shmem_access_double_call_fork FAILED (0 of 10)
  (shmem_access called once in parent process. It is then called again after fork in child process. The address received should be the same address the parent process received.)
  tester failed
 
-test shmem_access_read_write FAILED (0 of 10)
+test shmem_access_read_write PASSED (10 of 10)
  (making sure shared pages are readable and writable)
- tester failed
 
-test shmem_access_communication FAILED (0 of 10)
+test shmem_access_communication PASSED (10 of 10)
  (one process writing something and the other process reading it.)
- tester failed
 
 test shmem_access_full_address_space PASSED (10 of 10)
  (shmem_access should failed if the entire address space is full.)
 
 test shmem_access_full_address_space2 FAILED (0 of 10)
  (sbrk should not allocate and go past a shared memory.)
- tester failed
+ xv6 kernel panic
 
 test shmem_access_persistent FAILED (0 of 10)
  (making sure shared pages are not deallocated when no one references them.)
  tester failed
 
-test shmem_access_exec FAILED (0 of 10)
+test shmem_access_exec PASSED (10 of 10)
  (a new exec-ed program should not have access to shared pages when it begins.)
- tester failed
 
-test shmem_access_exec2 FAILED (0 of 10)
+test shmem_access_exec2 PASSED (10 of 10)
  (a new exec-ed program should reallocate virtual pages if shmem_access is called.)
- tester failed
 
 test shmem_access_syscall_args FAILED (0 of 10)
  (making sure pointers from shared pages can be successfully passed to system calls. ***NOTE*** only open and write system calls are tested here; when grading, we may change the test to any other system call that may take pointers.)
  tester failed
 
-test shmem_count_invalid_input FAILED (0 of 10)
+test shmem_count_invalid_input PASSED (10 of 10)
  (shmem_count invalid input test)
- tester failed
 
 test shmem_count_zero PASSED (10 of 10)
  (shmem_count should return 0 if no one is referencing the page.)
@@ -1994,13 +1979,11 @@ test shmem_count_zero2 FAILED (0 of 10)
  (shmem_count should return 0 after child process accesses and exits.)
  tester failed
 
-test shmem_count_one FAILED (0 of 10)
+test shmem_count_one PASSED (10 of 10)
  (shmem_count should return 1 after 1 access.)
- tester failed
 
-test shmem_count_one2 FAILED (0 of 10)
+test shmem_count_one2 PASSED (10 of 10)
  (shmem_count should return 1 after 2 accesses to the same page.)
- tester failed
 
 test shmem_count_fork FAILED (0 of 10)
  (shmem_count should return 2 after fork if the parent process has accessed a shared page.)
@@ -2010,6 +1993,6 @@ test shmem_count_exec FAILED (0 of 10)
  (Exec should decrement count for shared pages. Parent accesses a shared page, then it forks. Child performs exec to start a new program. In the new program, the count for the shared page should be 1.)
  tester failed
 
-Passed 7 of 23 tests.
-Overall 7 of 23
-Points 60 of 220
+Passed 16 of 23 tests.
+Overall 16 of 23
+Points 150 of 220

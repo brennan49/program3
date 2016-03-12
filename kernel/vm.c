@@ -10,6 +10,10 @@ extern char data[];  // defined in data.S
 
 static pde_t *kpgdir;  // for use in scheduler()
 
+#define SHMEM_PAGES (4)
+int shmemCount[SHMEM_PAGES];
+void* shmem_addr[SHMEM_PAGES];
+
 // Allocate one page table for the machine for the kernel address
 // space for scheduler processes.
 void
@@ -195,7 +199,7 @@ inituvm(pde_t *pgdir, char *init, uint sz)
     panic("inituvm: more than a page");
   mem = kalloc();
   memset(mem, 0, PGSIZE);
-  mappages(pgdir, 0, PGSIZE, PADDR(mem), PTE_W|PTE_U);
+  mappages(pgdir, (void*) PGSIZE, PGSIZE, PADDR(mem), PTE_W|PTE_U);
   memmove(mem, init, sz);
 }
 
@@ -303,7 +307,7 @@ copyuvm(pde_t *pgdir, uint sz)
   pte_t *pte;
   uint pa, i;
   char *mem;
-
+  int j;
   if((d = setupkvm()) == 0)
     return 0;
   for(i = PGSIZE; i < sz; i += PGSIZE){
@@ -319,7 +323,13 @@ copyuvm(pde_t *pgdir, uint sz)
       goto bad;
   }
   return d;
-
+  for(j = 0; j < 4; j++){
+    if(shmemCount[i] == 0)
+      continue;
+    if(mappages(d, proc->pageAddr[i], PGSIZE, (uint)shmem_addr[j], PTE_W|PTE_U) < 0)
+      goto bad;
+    shmemCount[j]++;
+  }
 bad:
   freevm(d);
   return 0;
@@ -346,8 +356,7 @@ int
 copyout(pde_t *pgdir, uint va, void *p, uint len)
 {
   char *buf, *pa0;
-  uint n, va0;
-  
+  uint n, va0; 
   buf = (char*)p;
   while(len > 0){
     va0 = (uint)PGROUNDDOWN(va);
@@ -363,4 +372,46 @@ copyout(pde_t *pgdir, uint va, void *p, uint len)
     va = va0 + PGSIZE;
   }
   return 0;
+}
+
+void
+shmem_init(void)
+{
+  int i;
+  for(i = 0; i < SHMEM_PAGES; i++){
+    shmemCount[i] = 0;
+    if((shmem_addr[i] = kalloc()) == 0)
+      panic("shmem_init failed");
+  }
+}
+
+void*
+shmem_access(int page_number)
+{ 
+  int vAddr;
+  if (page_number < 0 || page_number > 3)
+    return NULL;
+  if(proc->pageAddr[page_number] != 0)
+    return proc->pageAddr[page_number]; 
+  vAddr = USERTOP - (PGSIZE*(proc->pageAccesses + 1));
+  if(vAddr < 0)
+    return NULL;
+  if(proc->sz > vAddr)
+    return NULL;
+  if((mappages(proc->pgdir, (void*) vAddr, PGSIZE, (uint)shmem_addr[page_number], 
+      PTE_W|PTE_U)) < 0)
+    return NULL; 
+  proc->pageAddr[page_number] = (void*) vAddr;
+  proc->pageAccesses++;
+  proc->lowestAddr = vAddr;
+  shmemCount[page_number]++;
+  return (void*) vAddr;
+}
+
+int
+shmem_count(int page_number)
+{
+  if (page_number < 0 || page_number > 3)
+    return -1;
+  return shmemCount[page_number]; 
 }

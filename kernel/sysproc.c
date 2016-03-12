@@ -92,11 +92,17 @@ sys_uptime(void)
 int
 sys_shmem_access(void)
 {
-	return 0;
+  int pgInfo;
+  if((argint(0, &pgInfo)) == -1)
+    return -1;
+  return (int) shmem_access(pgInfo);
 }
 
 int
 sys_shmem_count(void)
 {
-	return 0;
+  int pgInfo;
+  if((argint(0, &pgInfo)) == -1)
+    return -1;
+  return shmem_count(pgInfo);
 }

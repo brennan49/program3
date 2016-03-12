@@ -53,7 +53,7 @@ found:
     return 0;
   }
   sp = p->kstack + KSTACKSIZE;
-  
+  p->lowestAddr = USERTOP;  
   // Leave room for trap frame.
   sp -= sizeof *p->tf;
   p->tf = (struct trapframe*)sp;
@@ -84,15 +84,15 @@ userinit(void)
   if((p->pgdir = setupkvm()) == 0)
     panic("userinit: out of memory?");
   inituvm(p->pgdir, _binary_initcode_start, (int)_binary_initcode_size);
-  p->sz = PGSIZE;
+  p->sz = PGSIZE + PGSIZE;
   memset(p->tf, 0, sizeof(*p->tf));
   p->tf->cs = (SEG_UCODE << 3) | DPL_USER;
   p->tf->ds = (SEG_UDATA << 3) | DPL_USER;
   p->tf->es = p->tf->ds;
   p->tf->ss = p->tf->ds;
   p->tf->eflags = FL_IF;
-  p->tf->esp = PGSIZE;
-  p->tf->eip = 0;  // beginning of initcode.S
+  p->tf->esp = PGSIZE + PGSIZE;
+  p->tf->eip = PGSIZE;  // beginning of initcode.S
 
   safestrcpy(p->name, "initcode", sizeof(p->name));
   p->cwd = namei("/");
@@ -144,7 +144,8 @@ fork(void)
   np->sz = proc->sz;
   np->parent = proc;
   *np->tf = *proc->tf;
-
+  np->pageAccesses = proc->pageAccesses;
+  np->lowestAddr = proc->lowestAddr;
   // Clear %eax so that fork returns 0 in the child.
   np->tf->eax = 0;
 
@@ -442,5 +443,3 @@ procdump(void)
     cprintf("\n");
   }
 }
-
-
