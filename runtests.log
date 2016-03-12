@@ -230,15 +230,15 @@ ld  -m    elf_i386 -nostdlib --omagic \
 dd if=/dev/zero of=xv6.img count=10000
 10000+0 records in
 10000+0 records out
-5120000 bytes (5.1 MB) copied, 0.0114692 s, 446 MB/s
+5120000 bytes (5.1 MB) copied, 0.0116313 s, 440 MB/s
 dd if=kernel/bootblock of=xv6.img conv=notrunc
 1+0 records in
 1+0 records out
-512 bytes (512 B) copied, 6.5366e-05 s, 7.8 MB/s
+512 bytes (512 B) copied, 6.6257e-05 s, 7.7 MB/s
 dd if=kernel/kernel of=xv6.img seek=1 conv=notrunc
 256+1 records in
 256+1 records out
-131419 bytes (131 kB) copied, 0.000268157 s, 490 MB/s
+131431 bytes (131 kB) copied, 0.00029789 s, 441 MB/s
 gcc -c  -iquote include -Wall -Werror -ggdb  -o tools/mkfs.o tools/mkfs.c
 gcc  tools/mkfs.o -o tools/mkfs
 mkdir -p fs
@@ -489,7 +489,7 @@ $ tester
 tester
 bad dereference (0x0fff): pid 4 tester: trap 14 err 4 on cpu 1 eip 0x1062 addr 0xfff--kill proc
 TEST PASSED
-$ 
+
 
 test null2 PASSED (10 of 10)
  (any dereference from first page should fault)
@@ -1245,7 +1245,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-
+$ 
 
 test shmem_access_full_address_space2 PASSED (10 of 10)
  (sbrk should not allocate and go past a shared memory.)
@@ -1328,12 +1328,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-TEST FAILED
+TEST PASSED
 $ 
 
-test shmem_access_persistent FAILED (0 of 10)
+test shmem_access_persistent PASSED (10 of 10)
  (making sure shared pages are not deallocated when no one references them.)
- tester failed
 
 starting shmem_access_exec
 
@@ -1511,7 +1510,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-
+$ 
 
 test shmem_access_exec2 PASSED (10 of 10)
  (a new exec-ed program should reallocate virtual pages if shmem_access is called.)
@@ -1594,13 +1593,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-open system call failed to take a string from within a shared page
-TEST FAILED
-$ 
+TEST PASSED
 
-test shmem_access_syscall_args FAILED (0 of 10)
+
+test shmem_access_syscall_args PASSED (10 of 10)
  (making sure pointers from shared pages can be successfully passed to system calls. ***NOTE*** only open and write system calls are tested here; when grading, we may change the test to any other system call that may take pointers.)
- tester failed
 
 starting shmem_count_invalid_input
 
@@ -1681,7 +1678,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-$ 
+
 
 test shmem_count_invalid_input PASSED (10 of 10)
  (shmem_count invalid input test)
@@ -1849,7 +1846,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-$ 
+
 
 test shmem_count_zero2 PASSED (10 of 10)
  (shmem_count should return 0 after child process accesses and exits.)
@@ -2239,9 +2236,8 @@ test shmem_access_full_address_space PASSED (10 of 10)
 test shmem_access_full_address_space2 PASSED (10 of 10)
  (sbrk should not allocate and go past a shared memory.)
 
-test shmem_access_persistent FAILED (0 of 10)
+test shmem_access_persistent PASSED (10 of 10)
  (making sure shared pages are not deallocated when no one references them.)
- tester failed
 
 test shmem_access_exec PASSED (10 of 10)
  (a new exec-ed program should not have access to shared pages when it begins.)
@@ -2249,9 +2245,8 @@ test shmem_access_exec PASSED (10 of 10)
 test shmem_access_exec2 PASSED (10 of 10)
  (a new exec-ed program should reallocate virtual pages if shmem_access is called.)
 
-test shmem_access_syscall_args FAILED (0 of 10)
+test shmem_access_syscall_args PASSED (10 of 10)
  (making sure pointers from shared pages can be successfully passed to system calls. ***NOTE*** only open and write system calls are tested here; when grading, we may change the test to any other system call that may take pointers.)
- tester failed
 
 test shmem_count_invalid_input PASSED (10 of 10)
  (shmem_count invalid input test)
@@ -2274,6 +2269,6 @@ test shmem_count_fork PASSED (10 of 10)
 test shmem_count_exec PASSED (10 of 10)
  (Exec should decrement count for shared pages. Parent accesses a shared page, then it forks. Child performs exec to start a new program. In the new program, the count for the shared page should be 1.)
 
-Passed 21 of 23 tests.
-Overall 21 of 23
-Points 200 of 220
+Passed 23 of 23 tests.
+Overall 23 of 23
+Points 220 of 220
