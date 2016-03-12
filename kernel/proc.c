@@ -201,6 +201,11 @@ exit(void)
         wakeup1(initproc);
     }
   }
+  int j;
+  for(j = 0; j < 4; j++){
+    if(proc->pageAddr[j] != 0)
+      shmem_close(j);
+  }
 
   // Jump into the scheduler, never to return.
   proc->state = ZOMBIE;

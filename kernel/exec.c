@@ -80,6 +80,14 @@ exec(char *path, char **argv)
       last = s+1;
   safestrcpy(proc->name, last, sizeof(proc->name));
 
+  int j;
+  for(j = 0; j < 4; j++){
+    if(proc->pageAddr[j] != 0){
+      proc->pageAddr[j] = 0;
+      shmem_close(j);
+    }
+  }
+
   // Commit to the user image.
   oldpgdir = proc->pgdir;
   proc->pgdir = pgdir;

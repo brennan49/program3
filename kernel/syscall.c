@@ -32,9 +32,6 @@ int
 fetchstr(struct proc *p, uint addr, char **pp)
 {
   char *s, *ep;
-
-  if(addr >= p->sz)
-    return -1;
   *pp = (char*)addr;
   ep = (char*)p->sz;
   for(s = *pp; s < ep; s++)

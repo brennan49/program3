@@ -415,3 +415,8 @@ shmem_count(int page_number)
     return -1;
   return shmemCount[page_number]; 
 }
+
+void
+shmem_close(int page_number){
+  shmemCount[page_number]--;
+}
